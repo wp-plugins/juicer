@@ -7,8 +7,6 @@ Tested up to: 4.1
 Stable tag: trunk
 License: GPLv2
 
-Juicer is a beautiful social media feed generator that you can embed on any page.
-
 == Description ==
 Juicer is a service that allows you to enter in the name of your social media accounts (or, if you prefer, hashtags) and Juicer will automatically pull the posts from these feeds and embed them into any of your pages with an easy shortcode. Juicer will automatically update these feeds whenever you create posts for your social media accounts.
 
@@ -34,7 +32,7 @@ Download the plugin zip file, unzip it, and upload it to your wordpress site und
 
 Sign up via [http://www.juicer.io](http://www.juicer.io) and create a feed for free
 
-One you've done that you can use the shortcode: [juicer name='YOUR_FEED_NAME' columns='3'] in any post or page
+One you've done that you can use the shortcode: `[juicer name='YOUR_FEED_NAME' columns='3']` in any post or page
 
 To get your Juicer feed name:
 
@@ -43,9 +41,9 @@ To get your Juicer feed name:
 - Click "Edit" on the feed you wish to embed
 - You should be taken to a url like http://www.juicer.io/feeds/example-feed
 - The 'example-feed' portion of the url is your feed name.
-- To use a shortcode for the embed feed try [juicer name='example-feed' columns='2']
+- To use a shortcode for the embed feed try `[juicer name='example-feed' columns='2']`
 
-Alternately, you can add the feed to your template directly if you like using PHP. Here's an example: <?php juicer_feed('name=juicer&columns=3); ?>
+Alternately, you can add the feed to your template directly if you like using PHP. Here's an example: `<?php juicer_feed('name=juicer&columns=3); ?>`
 
 == Frequently Asked Questions ==
 
@@ -56,7 +54,7 @@ Alternately, you can add the feed to your template directly if you like using PH
 Juicer is free forever. No really! There is a paid account that gives you added features like adding more social media accounts, creating multiple feeds and getting detailed social analytics. But if you just want a feed for your website, it's free forever!
 
 = It's not working for me! =
-Sorry to hear that! Give us a shout on our [Contact Page][http://www.juicer.io] and we'll help you out!
+Sorry to hear that! Give us a shout on our [Contact Page](http://www.juicer.io) and we'll help you out!
 
 == Screenshots ==
 1. An example Juicer Feed using a provided template
