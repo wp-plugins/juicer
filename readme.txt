@@ -7,6 +7,8 @@ Tested up to: 4.1
 Stable tag: trunk
 License: GPLv2
 
+Juicer is a beautiful social media feed generator that you can embed on any page.
+
 == Description ==
 Juicer is a service that allows you to enter in the name of your social media accounts (or, if you prefer, hashtags) and Juicer will automatically pull the posts from these feeds and embed them into any of your pages with an easy shortcode. Juicer will automatically update these feeds whenever you create posts for your social media accounts.
 
