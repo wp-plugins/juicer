@@ -41,9 +41,10 @@ To get your Juicer feed name:
 - Sign into your account on http://www.juicer.io
 - Navigate to http://www.juicer.io/feeds
 - Click "Edit" on the feed you wish to embed
-- You should be taken to a url like http://www.juicer.io/feeds/example-feed
-- The 'example-feed' portion of the url is your feed name.
-- To use a shortcode for the embed feed try `[juicer name='example-feed' columns='2']`
+- You should be taken to a url like http://www.juicer.io/feeds/juicer
+- The 'juicer' portion of the url is your feed name.
+- To use a shortcode for the embed feed try `[juicer name='juicer-feed' columns='2']`
+- Make sure you replace the `name` above with your feeds name.
 
 Alternately, you can add the feed to your template directly if you like using PHP. Here's an example: `<?php juicer_feed('name=juicer&columns=3); ?>`
 
