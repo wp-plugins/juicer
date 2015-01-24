@@ -4,7 +4,7 @@ Tags: social media feed, social media analytics, social media embed, social medi
 Donate link: http://www.juicer.io
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: trunk
+Stable tag: 1.1
 License: GPLv2
 
 Juicer is a beautiful social media feed generator that you can embed on any page.
