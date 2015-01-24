@@ -65,6 +65,7 @@ Sorry to hear that! Give us a shout on our [Contact Page](http://www.juicer.io) 
 3. The Juicer Feed Edit with all the functionality you are able to use.
 
 == Changelog ==
+1.0.1 Updating default feed
 1.0.0 Initial Version
 
 == Upgrade Notice ==
