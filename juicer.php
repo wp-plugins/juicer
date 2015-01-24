@@ -31,7 +31,7 @@ class Juicer_Feed {
   public function render( $args ) {
 
     $defaults = array(
-      'name' => 'juicer',
+      'name' => 'error',
       'columns' => '3'
     );
 
@@ -59,7 +59,7 @@ function juicer_feed( $args ) {
 
 function juicer_shortcode( $args ) {
   extract( shortcode_atts( array(
-      'name'    => 'juicer',
+      'name'    => 'error',
       'columns' => '3'
   ), $args ) );
 
