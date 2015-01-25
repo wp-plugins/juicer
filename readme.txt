@@ -4,8 +4,10 @@ Tags: social media feed, social media analytics, social media embed, social medi
 Donate link: http://www.juicer.io
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: trunk
+Stable tag: 1.1.2
 License: GPLv2
+
+Juicer is a beautiful social media feed generator that you can embed on any page.
 
 == Description ==
 Juicer is a service that allows you to enter in the name of your social media accounts (or, if you prefer, hashtags) and Juicer will automatically pull the posts from these feeds and embed them into any of your pages with an easy shortcode. Juicer will automatically update these feeds whenever you create posts for your social media accounts.
@@ -39,9 +41,10 @@ To get your Juicer feed name:
 - Sign into your account on http://www.juicer.io
 - Navigate to http://www.juicer.io/feeds
 - Click "Edit" on the feed you wish to embed
-- You should be taken to a url like http://www.juicer.io/feeds/example-feed
-- The 'example-feed' portion of the url is your feed name.
-- To use a shortcode for the embed feed try `[juicer name='example-feed' columns='2']`
+- You should be taken to a url like http://www.juicer.io/feeds/juicer
+- The 'juicer' portion of the url is your feed name.
+- To use a shortcode for the embed feed try `[juicer name='juicer-feed' columns='2']`
+- Make sure you replace the `name` above with your feeds name.
 
 Alternately, you can add the feed to your template directly if you like using PHP. Here's an example: `<?php juicer_feed('name=juicer&columns=3); ?>`
 
@@ -62,7 +65,18 @@ Sorry to hear that! Give us a shout on our [Contact Page](http://www.juicer.io) 
 3. The Juicer Feed Edit with all the functionality you are able to use.
 
 == Changelog ==
-1.0.0 Initial Version
+
+= 1.1.2 =
+* Embed js no longer includes jQuery, instead it is enqueued into the theme by wordpress.
+
+= 1.1.1 =
+* Fixing bug in juicer_feed php function
+
+= 1.1 =
+* Updating default feed
+
+= 1.0 =
+* Initial Version
 
 == Upgrade Notice ==
 No problems should be encountered when upgrading.
