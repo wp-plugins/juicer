@@ -59,6 +59,10 @@ Juicer is free forever. No really! There is a paid account that gives you added 
 = It's not working for me! =
 Sorry to hear that! Give us a shout on our [Contact Page](http://www.juicer.io) and we'll help you out!
 
+Make sure that if your site has jQuery it is using at least version 1.7
+
+Make sure that all Javascript errors are resolved.
+
 == Screenshots ==
 1. An example Juicer Feed using a provided template
 2. A Juicer feed with custom CSS
