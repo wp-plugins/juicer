@@ -50,7 +50,7 @@ class Juicer_Feed {
       '//assets.juicer.io/embed.css'
     );
     ?>
-    <ul class="juicer-feed" data-columns="<?php echo $args['columns']; ?>" data-feed-id="<?php echo $args['name']; ?>"></ul>
+    <ul class="juicer-feed" data-feed-id="<?php echo $args['name']; ?>"></ul>
     <?php
   }
 }
