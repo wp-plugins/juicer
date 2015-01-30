@@ -50,13 +50,15 @@ class Juicer_Feed {
 
     $defaults = array(
       'name' => 'error',
-      'columns' => '3'
+      'columns' => '3',
+      'per' => '100',
+      'pages' => '1000'
     );
 
     $args = wp_parse_args( $args, $defaults);
 
     ?>
-    <ul class="juicer-feed" data-feed-id="<?php echo $args['name']; ?>"><h1 class='referral'><a href='http://www.juicer.io'>Powered by Juicer</a></h1></ul>
+    <ul class="juicer-feed" data-feed-id="<?php echo $args['name']; ?>" data-per="<?php echo $args['per'] ?>" data-pages="<?php echo $args['pages'] ?>"><h1 class='referral'><a href='http://www.juicer.io'>Powered by Juicer</a></h1></ul>
     <?php
   }
 }
@@ -69,7 +71,9 @@ function juicer_feed( $args ) {
 function juicer_shortcode( $args ) {
   extract( shortcode_atts( array(
       'name'    => 'error',
-      'columns' => '3'
+      'columns' => '3',
+      'per' => '100',
+      'pages' => '1000'
   ), $args ) );
 
   $feed = new Juicer_Feed();
