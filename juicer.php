@@ -3,7 +3,7 @@
  * Plugin Name: Juicer
  * Plugin URI: http://www.juicer.io
  * Description: Add and embed a social media feed to your site with a shortcode.
- * Version: 1.3
+ * Version: 1.3.1
  * Author: Ryan MacInnes
  * Author URI: http://www.goddamnyouryan.com
  * License: GPLv2 or later
