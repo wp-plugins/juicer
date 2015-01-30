@@ -4,7 +4,7 @@ Tags: social media feed, social media analytics, social media embed, social medi
 Donate link: http://www.juicer.io
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 1.1.2
+Stable tag: 1.3.1
 License: GPLv2
 
 Juicer is a beautiful social media feed generator that you can embed on any page.
@@ -34,7 +34,7 @@ Download the plugin zip file, unzip it, and upload it to your wordpress site und
 
 Sign up via [http://www.juicer.io](http://www.juicer.io) and create a feed for free
 
-One you've done that you can use the shortcode: `[juicer name='YOUR_FEED_NAME' columns='3']` in any post or page
+One you've done that you can use the shortcode: `[juicer name='YOUR_FEED_NAME']` in any post or page
 
 To get your Juicer feed name:
 
@@ -43,10 +43,10 @@ To get your Juicer feed name:
 - Click "Edit" on the feed you wish to embed
 - You should be taken to a url like http://www.juicer.io/feeds/juicer
 - The 'juicer' portion of the url is your feed name.
-- To use a shortcode for the embed feed try `[juicer name='juicer-feed' columns='2']`
+- To use a shortcode for the embed feed try `[juicer name='juicer-feed']`
 - Make sure you replace the `name` above with your feeds name.
 
-Alternately, you can add the feed to your template directly if you like using PHP. Here's an example: `<?php juicer_feed('name=juicer&columns=3); ?>`
+Alternately, you can add the feed to your template directly if you like using PHP. Here's an example: `<?php juicer_feed('name=juicer); ?>`
 
 == Frequently Asked Questions ==
 
@@ -69,6 +69,15 @@ Make sure that all Javascript errors are resolved.
 3. The Juicer Feed Edit with all the functionality you are able to use.
 
 == Changelog ==
+
+= 1.3.1 =
+* Bug fix
+
+= 1.3 =
+* Making sure Juicer Scripts get called at the top of the head
+
+= 1.2 =
+* No longer need to specify number of columns. Instead control this in your http://www.juicer.io feed editor.
 
 = 1.1.2 =
 * Embed js no longer includes jQuery, instead it is enqueued into the theme by wordpress.
