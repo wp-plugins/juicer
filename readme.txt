@@ -1,6 +1,6 @@
 === Juicer ===
 Contributors: weckersham
-Tags: social media feed, social media analytics, social media embed, social media aggregator, social media embed, embed social media, social hub, social, media, aggregate, aggregator, Facebook, Twitter, Instagram, YouTube, Google Plus, Tumblr, Pinterest, Vine, Soundcloud, RSS, autoblog, autoblogger, feed aggregator
+Tags: social media feed, social media analytics, social media embed, social media aggregator, social media embed, embed social media, social hub, social, media, aggregate, aggregator, Facebook, Twitter, Instagram, YouTube, Google Plus, Tumblr, Pinterest, Vine, Soundcloud, RSS, LinkedIn, Linked In, Flickr, autoblog, autoblogger, feed aggregator, widget, social widget, social media widget, sidebar
 Donate link: http://www.juicer.io
 Requires at least: 3.0
 Tested up to: 4.1
@@ -48,6 +48,24 @@ To get your Juicer feed name:
 
 Alternately, you can add the feed to your template directly if you like using PHP. Here's an example: `<?php juicer_feed('name=juicer); ?>`
 
+= Advanced Usage =
+
+There are a few more parameters you can add to your shortcode / php function that will allow you to limit the number of posts that show up:
+
+`per`is the number of posts you want to show up on a page. Default is 100
+
+`pages` is the number of times you want the feed to add more posts as you scroll (This is known as infinite scroll). By default there is no limit to the number of pages, it will keep going until you've seen all the posts in your feed. If you only want it to add more posts once as you scroll set this to "2" for example.
+
+So if you wanted your feed to only ever display 15 posts you should do something like this:
+
+`[juicer name='YOUR_FEED_NAME' per='15' pages='1']`
+
+or
+
+`<?php juicer_feed('name=juicer&per=15&page=1); ?>`
+
+This will show 15 posts, and ensure that your feed doesn't load any posts beyond the first page.
+
 == Frequently Asked Questions ==
 
 = What is Juicer? =
@@ -55,6 +73,31 @@ Alternately, you can add the feed to your template directly if you like using PH
 
 = How much does it cost? =
 Juicer is free forever. No really! There is a paid account that gives you added features like adding more social media accounts, creating multiple feeds and getting detailed social analytics. But if you just want a feed for your website, it's free forever!
+
+= I only want a few posts showing up, not a huge feed! =
+Not a problem! There's a few different ways we can handle this.
+
+== Use our widget ==
+Log on to your [Juicer account](http://www.juicer.io) and click on "Edit" for your feed. Then click on "Feed Settings" and change your "Feed Style" to "Widget". This specific style shows just a single post at a time, and slides through them. It's simple and beautiful and perfect for putting in a sidebar or a footer, without taking up as much room as a normal juicer feed.
+
+== Limit the number of posts ==
+If you want to use a normal Juicer feed, but you don't want it to be super long there are some additional attributes you can pass into the short code or function `per` and `pages`
+
+`per` is the number of posts you want to show up on a page. Default is 100
+
+`pages` is the number of times you want the feed to add more posts as you scroll (This is known as infinite scroll). By default there is no limit to the number of pages, it will keep going until you've seen all the posts in your feed. If you only want it to add more posts once as you scroll set this to "2" for example.
+
+So if you wanted your feed to only ever display 15 posts you should do something like this:
+
+`[juicer name='YOUR_FEED_NAME' per='15' pages='1']`
+
+or
+
+`<?php juicer_feed('name=juicer&per=15&page=1); ?>`
+
+This will show 15 posts, and ensure that your feed doesn't load any posts beyond the first page.
+
+Make sense? If not, [Contact Us](http://www.juicer.io) and we'll help you out.
 
 = It's not working for me! =
 Sorry to hear that! Give us a shout on our [Contact Page](http://www.juicer.io) and we'll help you out!
