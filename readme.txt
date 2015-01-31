@@ -75,13 +75,11 @@ This will show 15 posts, and ensure that your feed doesn't load any posts beyond
 Juicer is free forever. No really! There is a paid account that gives you added features like adding more social media accounts, creating multiple feeds and getting detailed social analytics. But if you just want a feed for your website, it's free forever!
 
 = I only want a few posts showing up, not a huge feed! =
-Not a problem! There's a few different ways we can handle this.
+Not a problem! There's a few different ways we can handle this:
 
-*Use our widget*
-Log on to your [Juicer account](http://www.juicer.io) and click on "Edit" for your feed. Then click on "Feed Settings" and change your "Feed Style" to "Widget". This specific style shows just a single post at a time, and slides through them. It's simple and beautiful and perfect for putting in a sidebar or a footer, without taking up as much room as a normal juicer feed.
+*Use our widget:* Log on to your [Juicer account](http://www.juicer.io) and click on "Edit" for your feed. Then click on "Feed Settings" and change your "Feed Style" to "Widget". This specific style shows just a single post at a time, and slides through them. It's simple and beautiful and perfect for putting in a sidebar or a footer, without taking up as much room as a normal juicer feed.
 
-*Limit the number of posts*
-If you want to use a normal Juicer feed, but you don't want it to be super long there are some additional attributes you can pass into the short code or function `per` and `pages`
+*Limit the number of posts:* If you want to use a normal Juicer feed, but you don't want it to be super long there are some additional attributes you can pass into the short code or function `per` and `pages`:
 
 `per` is the number of posts you want to show up on a page. Default is 100
 
