@@ -43,10 +43,10 @@ To get your Juicer feed name:
 - Click "Edit" on the feed you wish to embed
 - You should be taken to a url like http://www.juicer.io/feeds/juicer
 - The 'juicer' portion of the url is your feed name.
-- To use a shortcode for the embed feed try `[juicer name='juicer-feed']`
+- To use a shortcode for the embed feed try `[juicer name='juicer']`
 - Make sure you replace the `name` above with your feeds name.
 
-Alternately, you can add the feed to your template directly if you like using PHP. Here's an example: `<?php juicer_feed('name=juicer); ?>`
+Alternately, you can add the feed to your template directly if you like using PHP. Here's an example: `<?php juicer_feed('name=juicer'); ?>`
 
 = Advanced Usage =
 
@@ -62,7 +62,7 @@ So if you wanted your feed to only ever display 15 posts you should do something
 
 or
 
-`<?php juicer_feed('name=juicer&per=15&pages=1); ?>`
+`<?php juicer_feed('name=juicer&per=15&pages=1'); ?>`
 
 This will show 15 posts, and ensure that your feed doesn't load any posts beyond the first page.
 
@@ -91,7 +91,7 @@ So if you wanted your feed to only ever display 15 posts you should do something
 
 or
 
-`<?php juicer_feed('name=juicer&per=15&pages=1); ?>`
+`<?php juicer_feed('name=juicer&per=15&pages=1'); ?>`
 
 This will show 15 posts, and ensure that your feed doesn't load any posts beyond the first page.
 
