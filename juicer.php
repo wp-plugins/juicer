@@ -3,7 +3,7 @@
  * Plugin Name: Juicer
  * Plugin URI: http://www.juicer.io
  * Description: Add and embed a social media feed to your site with a shortcode.
- * Version: 1.4
+ * Version: 1.4.1
  * Author: Ryan MacInnes
  * Author URI: http://www.goddamnyouryan.com
  * License: GPLv2 or later
@@ -52,12 +52,16 @@ class Juicer_Feed {
       'name' => 'error',
       'columns' => '3',
       'per' => '100',
-      'pages' => '1000'
+      'pages' => NULL
     );
 
     $args = wp_parse_args( $args, $defaults);
 
-    $output = '<ul class="juicer-feed" data-feed-id="' . $args['name'] .'" data-per="' .$args['per'] . '" data-pages="' . $args['pages'] . '"><h1 class="referral"><a href="http://www.juicer.io">Powered by Juicer</a></h1></ul>';
+    if ( is_null($args['pages']) ) {
+      $output = '<ul class="juicer-feed" data-feed-id="' . $args['name'] .'" data-per="' .$args['per'] . '"><h1 class="referral"><a href="http://www.juicer.io">Powered by Juicer</a></h1></ul>';
+    } else {
+      $output = '<ul class="juicer-feed" data-feed-id="' . $args['name'] .'" data-per="' .$args['per'] . '" data-pages="' . $args['pages'] . '"><h1 class="referral"><a href="http://www.juicer.io">Powered by Juicer</a></h1></ul>';
+    };
 
     return $output;
   }
