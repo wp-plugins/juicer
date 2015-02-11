@@ -16,7 +16,7 @@ To use this plugin you must create an account on [http://www.juicer.io](http://w
 
 = Features =
 
-* A beautiful feed of your social media content from basically networks: Facebook, Twitter, Instagram, YouTube, Google Plus, Tumblr, Pinterest, Tumblr, Vine, and RSS.
+* A beautiful feed of your social media content from basically networks: Facebook, Twitter, Instagram, YouTube, Google Plus, Tumblr, Pinterest, Tumblr, Vine, RSS, LinkedIn, Flickr and Vimeo.
 * Gather your content by @username or #hashtag
 * Setup rules & filters to automatically eliminate unwanted content retweets and duplicate posts.
 * Moderate and remove your social media content with one click.
