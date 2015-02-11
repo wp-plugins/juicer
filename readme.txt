@@ -1,6 +1,6 @@
 === Juicer ===
 Contributors: weckersham
-Tags: social media feed, social media analytics, social media embed, social media aggregator, social media embed, embed social media, social hub, social, media, aggregate, aggregator, Facebook, Twitter, Instagram, YouTube, Google Plus, Tumblr, Pinterest, Vine, Soundcloud, RSS, LinkedIn, Linked In, Flickr, autoblog, autoblogger, feed aggregator, widget, social widget, social media widget, sidebar
+Tags: social media feed, social media analytics, social media embed, social media aggregator, social media embed, embed social media, social hub, social, media, aggregate, aggregator, Facebook, Twitter, Instagram, YouTube, Google Plus, Tumblr, Pinterest, Vine, Soundcloud, RSS, LinkedIn, Linked In, Flickr, Vimeo, autoblog, autoblogger, feed aggregator, widget, social widget, social media widget, sidebar
 Donate link: http://www.juicer.io
 Requires at least: 3.0
 Tested up to: 4.1
