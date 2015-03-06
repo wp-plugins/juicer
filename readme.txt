@@ -1,4 +1,4 @@
-=== Juicer ===
+=== Juicer: Show all your social media posts in a beautiful feed. ===
 Contributors: weckersham
 Tags: social media feed, social media analytics, social media embed, social media aggregator, social media embed, embed social media, social hub, social, media, aggregate, aggregator, Facebook, Twitter, Instagram, YouTube, Google Plus, Tumblr, Pinterest, Vine, Soundcloud, RSS, LinkedIn, Linked In, Flickr, Vimeo, autoblog, autoblogger, feed aggregator, widget, social widget, social media widget, sidebar
 Donate link: http://www.juicer.io
@@ -7,7 +7,7 @@ Tested up to: 4.1
 Stable tag: 1.5
 License: GPLv2
 
-Juicer is a beautiful social media feed generator that you can embed on any page.
+Aggregate and embed your social media posts on your site (Facebook, Twitter, Instagram, Vine, Pinterest and many more) as a beautiful feed.
 
 == Description ==
 Juicer is a service that allows you to enter in the name of your social media accounts (or, if you prefer, hashtags) and Juicer will automatically pull the posts from these feeds and embed them into any of your pages with an easy shortcode. Juicer will automatically update these feeds whenever you create posts for your social media accounts.
