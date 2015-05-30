@@ -1,6 +1,6 @@
 === Juicer: Show all your social media posts in a beautiful feed. ===
 Contributors: weckersham
-Tags: social media feed, social media analytics, social media embed, social media aggregator, social media embed, embed social media, social hub, social, media, hash tag, hashtag, aggregate, aggregator, Facebook, Twitter, Instagram, YouTube, Google Plus, Tumblr, Pinterest, Vine, Soundcloud, RSS, LinkedIn, Linked In, Flickr, Vimeo, autoblog, autoblogger, feed aggregator, hashtag aggregator, hash tag aggregator, widget, hashtag widget, hash tag widget, social widget, social media widget, sidebar
+Tags: social media feed, social media analytics, social media embed, social media aggregator, social media embed, embed social media, social hub, social, media, hash tag, hashtag, aggregate, aggregator, Facebook, Twitter, Instagram, YouTube, Google Plus, Tumblr, Pinterest, Vine, Soundcloud, RSS, LinkedIn, Linked In, Flickr, Vimeo, Yelp, Deviant Art, DeviantArt, autoblog, autoblogger, feed aggregator, hashtag aggregator, hash tag aggregator, widget, hashtag widget, hash tag widget, social widget, social media widget, sidebar
 Donate link: http://www.juicer.io
 Requires at least: 3.0
 Tested up to: 4.1
@@ -16,7 +16,7 @@ To use this plugin you must create an account on [http://www.juicer.io](http://w
 
 = Features =
 
-* A beautiful feed of your social media content from basically networks: Facebook, Twitter, Instagram, YouTube, Google Plus, Tumblr, Pinterest, Tumblr, Vine, RSS, LinkedIn, Flickr and Vimeo.
+* A beautiful feed of your social media content from basically networks: Facebook, Twitter, Instagram, YouTube, Google Plus, Tumblr, Pinterest, Tumblr, Vine, RSS, LinkedIn, Flickr, Vimeo, Hashtags, Yelp and DeviantArt.
 * Gather your content by @username or #hashtag
 * Setup rules & filters to automatically eliminate unwanted content retweets and duplicate posts.
 * Moderate and remove your social media content with one click.
