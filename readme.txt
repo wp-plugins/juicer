@@ -111,6 +111,9 @@ Make sure that all Javascript errors are resolved.
 
 == Changelog ==
 
+= 1.6 =
+* Dynamically generating <ul> based on passed in attributes.
+
 = 1.5 =
 * Adding "after" callback
 
