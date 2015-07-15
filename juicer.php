@@ -3,7 +3,7 @@
  * Plugin Name: Juicer
  * Plugin URI: http://www.juicer.io
  * Description: Add and embed a social media feed to your site with a shortcode.
- * Version: 1.5
+ * Version: 1.6
  * Author: Ryan MacInnes
  * Author URI: http://www.goddamnyouryan.com
  * License: GPLv2 or later
@@ -50,19 +50,15 @@ class Juicer_Feed {
 
     $defaults = array(
       'name' => 'error',
-      'columns' => '3',
-      'per' => '100',
-      'pages' => NULL,
-      'after' => ''
     );
 
     $args = wp_parse_args( $args, $defaults);
 
-    if ( is_null($args['pages']) ) {
-      $output = '<ul class="juicer-feed" data-feed-id="' . $args['name'] . '" data-per="' . $args['per'] . '" data-after="' . $args['after'] . '"><h1 class="referral"><a href="http://www.juicer.io">Powered by Juicer</a></h1></ul>';
-    } else {
-      $output = '<ul class="juicer-feed" data-feed-id="' . $args['name'] . '" data-per="' . $args['per'] . '" data-pages="' . $args['pages'] . '" data-after="' . $args['after'] . '"><h1 class="referral"><a href="http://www.juicer.io">Powered by Juicer</a></h1></ul>';
-    };
+    $output = '<ul class="juicer-feed" data-feed-id="' . $args['name'] . '"' . join(' ', array_map(function($key) use ($args) {
+      if ( !empty( $args[$key] ) ) {
+        return 'data-' .$key.'="'.$args[$key].'"';
+      }
+    }, array_keys($args))) . '><h1 class="referral"><a href="http://www.juicer.io">Powered by Juicer</a></h1></ul>';
 
     return $output;
   }
@@ -76,10 +72,6 @@ function juicer_feed( $args ) {
 function juicer_shortcode( $args ) {
   extract( shortcode_atts( array(
       'name'    => 'error',
-      'columns' => '3',
-      'per' => '100',
-      'pages' => NULL,
-      'after' => ''
   ), $args ) );
 
   $feed = new Juicer_Feed();
