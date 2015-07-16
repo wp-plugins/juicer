@@ -3,7 +3,7 @@
  * Plugin Name: Juicer
  * Plugin URI: http://www.juicer.io
  * Description: Add and embed a social media feed to your site with a shortcode.
- * Version: 1.1.2
+ * Version: 1.6.1
  * Author: Ryan MacInnes
  * Author URI: http://www.goddamnyouryan.com
  * License: GPLv2 or later
@@ -26,49 +26,71 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
+add_action( 'wp_enqueue_scripts', 'juicer_scripts', 0 );
+function juicer_scripts() {
+
+  wp_enqueue_script('jquery');
+
+  wp_enqueue_script(
+    'juicerembed',
+    '//assets.juicer.io/embed-no-jquery.js',
+    array('jquery'),
+    false,
+    false
+  );
+
+  wp_enqueue_style(
+    'juicerstyle',
+    '//assets.juicer.io/embed.css'
+  );
+}
+
 class Juicer_Feed {
 
   public function render( $args ) {
 
     $defaults = array(
       'name' => 'error',
-      'columns' => '3'
     );
 
     $args = wp_parse_args( $args, $defaults);
 
-    wp_enqueue_script('jquery');
+    $map_attributes = generate_attributes($args);
 
-    wp_enqueue_script(
-      'juicerembed',
-      '//assets.juicer.io/embed-no-jquery.js',
-      array('jquery')
-    );
+    $attributes = join(' ', $map_attributes);
 
-    wp_enqueue_style(
-      'juicerstyle',
-      '//assets.juicer.io/embed.css'
-    );
-    ?>
-    <ul class="juicer-feed" data-columns="<?php echo $args['columns']; ?>" data-feed-id="<?php echo $args['name']; ?>"></ul>
-    <?php
+    $output = '<ul class="juicer-feed" data-feed-id="' . $args['name'] . '"' . $attributes . '><h1 class="referral"><a href="http://www.juicer.io">Powered by Juicer</a></h1></ul>';
+
+    return $output;
   }
+
+}
+
+function generate_attributes( $array ) {
+  $attrs = array();
+
+  foreach ( $array as $key => $val ) {
+    if ( !empty($val) ) {
+      array_push($attrs, 'data-' . $key . '="' . $val . '"');
+    }
+  }
+
+  return $attrs;
 }
 
 function juicer_feed( $args ) {
     $feed = new Juicer_Feed();
-    $feed ->render( $args );
+    echo $feed->render( $args );
 }
 
 function juicer_shortcode( $args ) {
   extract( shortcode_atts( array(
       'name'    => 'error',
-      'columns' => '3'
   ), $args ) );
 
   $feed = new Juicer_Feed();
 
-  $feed->render( $args );
+  return $feed->render( $args );
 }
 
 add_shortcode( 'juicer', 'juicer_shortcode' );
