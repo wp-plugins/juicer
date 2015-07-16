@@ -3,7 +3,7 @@
  * Plugin Name: Juicer
  * Plugin URI: http://www.juicer.io
  * Description: Add and embed a social media feed to your site with a shortcode.
- * Version: 1.6
+ * Version: 1.6.1
  * Author: Ryan MacInnes
  * Author URI: http://www.goddamnyouryan.com
  * License: GPLv2 or later
@@ -24,6 +24,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
+
 
 add_action( 'wp_enqueue_scripts', 'juicer_scripts', 0 );
 function juicer_scripts() {
@@ -54,14 +55,27 @@ class Juicer_Feed {
 
     $args = wp_parse_args( $args, $defaults);
 
-    $output = '<ul class="juicer-feed" data-feed-id="' . $args['name'] . '"' . join(' ', array_map(function($key) use ($args) {
-      if ( !empty( $args[$key] ) ) {
-        return 'data-' .$key.'="'.$args[$key].'"';
-      }
-    }, array_keys($args))) . '><h1 class="referral"><a href="http://www.juicer.io">Powered by Juicer</a></h1></ul>';
+    $map_attributes = generate_attributes($args);
+
+    $attributes = join(' ', $map_attributes);
+
+    $output = '<ul class="juicer-feed" data-feed-id="' . $args['name'] . '"' . $attributes . '><h1 class="referral"><a href="http://www.juicer.io">Powered by Juicer</a></h1></ul>';
 
     return $output;
   }
+
+}
+
+function generate_attributes( $array ) {
+  $attrs = array();
+
+  foreach ( $array as $key => $val ) {
+    if ( !empty($val) ) {
+      array_push($attrs, 'data-' . $key . '="' . $val . '"');
+    }
+  }
+
+  return $attrs;
 }
 
 function juicer_feed( $args ) {

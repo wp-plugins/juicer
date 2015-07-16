@@ -4,7 +4,7 @@ Tags: social media feed, social media analytics, social media embed, social medi
 Donate link: http://www.juicer.io
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 1.6
+Stable tag: 1.6.1
 License: GPLv2
 
 Aggregate and embed your social media posts on your site (Facebook, Twitter, Instagram, Vine, Pinterest and many more) as a beautiful feed.
@@ -110,6 +110,9 @@ Make sure that all Javascript errors are resolved.
 3. The Juicer Feed Edit with all the functionality you are able to use.
 
 == Changelog ==
+
+= 1.6.1 =
+* Map attributes better, clean up code, support older versions of php
 
 = 1.6 =
 * Dynamically generating <ul> based on passed in attributes.
